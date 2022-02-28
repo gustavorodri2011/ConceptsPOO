@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ConceptsPOO
+﻿namespace ConceptsPOO
 {
     public class Date
     {
@@ -32,7 +26,7 @@ namespace ConceptsPOO
             {
                 return day;
             }
-            throw new MonthException($"Invalid day: {day}");
+            throw new DayException($"Invalid day: {day}");
         }
 
         private bool IsLeapYear(int year)
